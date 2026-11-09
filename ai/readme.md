@@ -1,0 +1,92 @@
+大模型基础
+	大模型基本信息
+		历史
+		定义
+		实例
+	大模型原理
+		生成式模型
+		大语言模型
+		大模型技术
+			OpenAI|LLaMa|ChatGLM
+			Transformer架构
+			NLP原理
+				数学基础
+				机器学习
+				神经网络基础
+				基本概念
+				算法和技术
+			关键技术
+				预训练
+				推理规划
+				LLM加速
+				强化学习
+				SFT监督微调
+				PPO算法
+				RLHF
+		Prompt提示词工程
+			AI开发环境
+				Python|IDE|pip
+			提示词工程
+				Prompt构成要素
+				Prompt类型
+					零样本提示|少样本提示
+			提示词进阶
+				思维链
+				自洽性
+				思维树
+				提示词攻击和防范
+				Prompt和RAG/Agent
+AI大模型和RAG应用开发工程
+	大模型API调用
+		OpenAI API
+		国产大模型 API
+		API参数配置
+	LangChain框架
+		LangChain基础
+		Chains链
+		Agents代理
+		Memory记忆
+		Tools工具
+	RAG检索增强生成
+		RAG概念
+		向量数据库
+			Milvus|Chroma|Faiss
+		文本嵌入
+		检索策略
+		RAG优化
+	AI应用开发
+		聊天机器人
+		知识库问答
+		文档分析
+		内容生成
+大模型Agent应用架构
+	Agent概念
+	Agent架构
+		ReAct|AutoGPT|BabyAGI
+	多Agent系统
+	Agent工具集成
+大模型微调和私有化部署
+	模型微调
+		LoRA|QLoRA|Prompt-Tuning
+	模型部署
+		Ollama本地部署|模型量化|推理优化
+	私有化部署
+		GPU服务器|模型服务化
+
+
+
+
+项目实战
+	AI聊天机器人
+	RAG知识库
+	AI Agent应用
+	垂直领域AI应用
+
+求职备战
+	简历准备
+	面试准备
+		AI大模型面试题
+		Prompt工程面试题
+		RAG面试题
+		LangChain面试题
+	面试技巧
