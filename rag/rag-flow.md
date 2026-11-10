@@ -33,6 +33,11 @@ find documents about need knowledge.
 process query input from user for better match.
 1. Query Transformation
 use llm to generate specific general decomposed query.
+  1. 指代消解
+  2. 省略句补全
+  3. 同义词和术语规范化
+  4. 查询条件提取
+  5. 关键词提取
 2. HyDE
 use llm to generate posiable answer to match.
 ### 2.2 Retrieval
