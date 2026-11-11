@@ -17,16 +17,25 @@ kind: question intent, execute intent
     逐步细化 refinement
 3. error: unclear, unsupport
 ## purpose
-## slot-filling
-Slot如何定义
-few-shot
-spec加载
+## slot-filling 槽位填充
+将用户模糊的自然语言，转化为机器能理解的、结构化的参数与指令。
+1. slot如何定义
+2. few-shot
+3. spec加载
+4. 典型步骤
+“识别意图 → 提取已有槽位 → 追问缺失槽位 → 直至集齐”
 
 多意图的意图依赖分析
 意图识别测试集
 
-
-
+## layers pipeline
+语句往往需要进一步解析才能满足用户在其具体情境的需求。
+1. 望文生义层：
+语句在一般语言上直接近似的语义
+2. 用户表达层：
+语句由于用户个性化表达潜在的语义补充和语义偏转
+3. 真实世界层：
+语句描述和作用于真实世界所面临的约束和指定
 
 
 # Intent Generation 意图生成

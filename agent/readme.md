@@ -8,3 +8,6 @@ OpenClaw（追求广度）
 
 LangGraph（专注流程）
 精确编排复杂业务的工作流引擎
+
+agent = model + harness
+harness = agent-loop + memory + tool

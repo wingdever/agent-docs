@@ -2,7 +2,7 @@
 20 phases 542 lessons 250 glossary terms
 ## 0. setup & tooling
 ## 1. math foundations
-## 2. ML foudamentals
+## 2. ML fundamentals
 ## 3. deep learning core
 ## 4. computer vision
 ## 5. NLP: foundations to advanced
@@ -39,11 +39,11 @@
 01.01 linear algebra intuition
 01.02 vectors, matrices & operations
 01.03 matrix transformations & eigenvalues
-01.04 caculus for ML: derivatives & gradients
+01.04 calculus for ML: derivatives & gradients
 01.05 chain rule & automatic differentiation
 01.06 probability & distributions
 01.07 bayes'theorem & statistical thinking
-01.08 optimazayion: gradient descent family
+01.08 optimization: gradient descent family
 01.09 information theory: entropy, KL divergence
 01.10 dimensionality reduction: PCA, t-SNE, UMAP
 01.11 singular value decomposition
@@ -58,7 +58,7 @@
 01.20 the fourier transform
 01.21 graph theory for ML
 01.22 stochastic processes
-# 2. ML foudamentals
+# 2. ML fundamentals
 02.01 what is Machine Learning
 02.02 linear regression from scratch
 02.03 logistic regression & classification
@@ -149,7 +149,7 @@
 05.23 chunking strategies for RAG
 05.24 coreference resolution
 05.25 entity linking & disambiguation
-05.26 relation extraction & knowlege graph construction
+05.26 relation extraction & knowledge graph construction
 05.27 LLM evaluation: RAGAS, DeepEval, G-Eval
 05.28 Long-Context Evaluation: NIAH, RULER, longBench, MRCR
 05.29 dialogue state tracking
@@ -178,7 +178,7 @@
 07.04 positional encoding: sinusoidal, RoPE, ALiBi
 07.05 the full transformer: encoder + decoder
 07.06 BERT - masked language modeling
-07.07 GPT - causal lanugage modeling
+07.07 GPT - causal language modeling
 07.08 T5, BART - encoder-decoder models
 07.09 vision transformers (ViT)
 07.10 audio transformers - whisper architecture
@@ -224,9 +224,9 @@
 10.04 pre-training a mini GPT(124M)
 10.05 distributed training, FSDP, deepSpeed
 10.06 instruction tuning - SFT
-10.07 RLHF - reward mdoel + PPO
+10.07 RLHF - reward model + PPO
 10.08 DPO - direct preference optimization
-10.09 constitutional AI & slef-improvement
+10.09 constitutional AI & self-improvement
 10.10 evaluation - benchmarks, evals
 10.11 quantization: INT8, GPTQ, AWQ, GGUF
 10.12 inference optimization
@@ -267,7 +267,7 @@
 12.04 flamingo and gated cross-attention
 12.05 LLaVA and Visual Instruction Tuning
 12.06 Any-Resolution vision - Patch-n'-Pack and NaFlex
-12.07 open-weight VLM recipes: waht actually matters
+12.07 open-weight VLM recipes: what actually matters
 12.08 LLaVA-OneVision: Single, Multi, Video
 12.09 Qwen-VL family and dynamic-FPS video
 12.10 internVL3 native multimodal pretraining
@@ -289,10 +289,19 @@
 # 13. tools & protocols
 13.01 the tool interface
 13.02 function calling deep dive
-13.03 parrallel and streaming tool calls
+13.03 parallel and streaming tool calls
 13.04 structured output
 13.05 tool schema design
-(mcp
+13.19 A2A protocol
+13.20 openTelemetry GenAI
+13.21 LLM routing layer
+13.22 agent skills: portable contract and runtime boundary
+13.23 capstone: stateless tool ecosystem
+## skill
+13.24 skill discovery and progressive disclosure
+13.25 skill invocation and routing
+13.26 skill evals, packaging, and portability
+## mcp
 13.06 fundamentals: stateless requests and json-rpc
 13.07 server build: stateless python and typescript
 13.08 client build: discovery, routing and dual-era fallback
@@ -306,24 +315,11 @@
 13.16 authorization: CIMD, Issuer binding, and PKCE state
 13.17 stateless gateways and registry admission
 13.18 auth in production: Issuer-Bound enrollment and tokens
-/)
-13.19 A2A protocol
-13.20 openTelemetry GenAI
-13.21 LLM routing layer
-13.22 agent skills: portable contract and runtime boundary
-13.23 capstone: stateless tool ecosystem
-(skill
-13.24 skill discovery and progressive disclosure
-13.25 skill invocation and routing
-13.26 skill evals, packaging, and portability
-/)
-(mcp
 13.28 mcp tool contracts and content
 13.29 mcp reliability, cancellation, and flow control
 13.30 mcp registry supply chain: admission, drift, and rollback
 13.31 mcp conformance engineering: versioning, evidence, operations
-/)
-(reverse-engineer
+## reverse-engineer
 13.32 program anatomy: an ELF reader from scratch
 13.33 disassembly and control flow: from bytes to graph can check
 13.34 lifting to pseudocode: IR, SSA, Structuring from scratch
@@ -343,12 +339,11 @@
 13.42 dynamic analysis of your own program:
       debuggers, traces, and confirming static claims
 13.43 beyond native code:
-      python, JVM, .net, and webAssembly byecode
+      python, JVM, .net, and webAssembly bytecode
 13.44 binary diffing and symbolic execution:
       matching functions and solving for inputs
 13.45 ai-assisted reverse engineering:
       LLM decompilers, analysis agents, and ground truth
-/)
 # 14. agent engineering
 14.01 the agent loop
 14.02 ReWOO and plan-and-execute
@@ -378,7 +373,7 @@
 14.26 failure models - why agents break
 14.27 prompt injection and the PVE Defense
 14.28 orchestration patterns - supervisor, swarm, hierarchical
-14.29 production runtimes - quene, event, cron
+14.29 production runtimes - queue, event, cron
 14.30 eval-driven agent development
 14.31 agent workbench: why capable models still fail
 14.32 the minimal agent workbench
@@ -405,7 +400,202 @@
 14.53 choose prototype, Pilot, or production deliberately
 14.54 build a feedback ratchet with ownership and retirement
 # 15. autonomous systems
+15.01 from chatbots to long-horizon agents (METR)
+15.02 STaR, V-STaR, Quiet-STaR: self-taught reasoning
+15.03 alphaEvolve: Evolutionary coding agents
+15.04 Darwin Godel Machine: self-modifying agents
+15.05 AI scientist v2: workshop-level research
+15.06 automated alignment research (anthropic AAR)
+15.07 recursive self-improvement: capability vs alignment
+15.08 bounded self-improvement designs
+15.09 autonomous coding agent landscape (SWE-bench, CodeAct)
+15.10 permission models for autonomous agents
+15.11 browser agents and indirect prompt injection
+15.12 durable execution for long-running agents
+15.13 action budgets, iteration caps, cost governors
+15.14 kill switches, circuit breakers, canary tokens
+15.15 HITL: propose-then-commit
+15.16 checkpoints and rollback
+15.17 constitutional AI and rule overrides
+15.18 llama guard and input/output classification
+15.19 anthropic responsible scaling policy v3.0
+15.20 openAI preparedness framework and deepmind FSF
+15.21 METR time horizons and external evaluation
+15.22 CAIS, CAISI, and Societal-Scale Risk
 # 16. multi-agent & swarms
+16.01 why multi-agent
+16.02 FIPA-ACL heritage and speech acts
+16.03 communication protocols
+16.04 the multi-agent primitive model
+16.05 supervisor / orchestrator-worker pattern
+16.06 hierarchical architecture and decomposition drift
+16.07 society of mind and multi-agent debate
+16.08 role specialization - planner / critic / executor / verifier
+16.09 parallel swarm and networked architectures
+16.10 group chat and speaker selection
+16.11 handoffs and routines (stateless orchestration)
+16.12 a2a - the agent-to-agent protocol
+16.13 shared memory and blackboard patterns
+16.14 consensus and byzantine fault tolerance
+16.15 voting, self-consistency, and debate topology
+16.16 negotiation and bargaining
+16.17 generative agents and emergent simulation
+16.18 theory of mind and emergent coordination
+16.19 swarm optimization (PSO, ACO)
+16.20 MARL - MADDPG, QMIX, MAPPO
+16.21 agent economies, token incentives, reputation
+16.22 production scaling - queues, checkpoints, durability
+16.23 failure modes - MAST, groupthink, monoculture
+16.24 evaluation and coordination benchmarks
+16.25 case studies and 2026 state of the art
 # 17. infrastructure & production
+17.01 managed LLM platforms - bedrock, azure openAI, vertex AI
+17.02 inference platform economics
+       - fireworks, together, baseten, modal
+17.03 gpu autoscaling on kubernetes - karpenter, KAI scheduler
+17.04 serving engine internals
+       - pagedAttention, Continous Batching, chunked prefill
+17.05 EAGLE-3 speculative decoding in production
+17.06 prefix-cache serving - radixAttention and KV reuse
+17.07 hardware-specialized inference compilation
+       - FP8 and NVFP4 on blackwell
+17.08 inference metrics - TTFT, TPOT, ITL, Goodput, P99
+17.09 production quantization - AWQ, GPTQ, GGUF, FP8, NVFP4
+17.10 cold start mitigation for serverless LLMs
+17.11 multi-region LLM serving and KV cache locality
+17.12 edge inference - ANE, Hexagon, webGPU, Jetson
+17.13 LLM observability stack selection
+17.14 prompt caching and semantic caching economics
+17.15 batch APIs - the 50% discount as industry standard
+17.16 model routing as a cost-reduction primitive
+17.17 disaggregated prefill/decode - NVIDIA dynamo and llm-d
+17.18 production serving stack - KV offloading and cache-aware routing
+17.19 AI gateways - LiteLLM, portkey, Kong, Bifrost
+17.20 shadow, canary, and progressive deployment
+17.21 A/B testing LLM features - growthbook and statsig
+17.22 load testing LLM APIs - k6, LLMPerf, GenAI-Perf
+17.23 SRE for AI - multi-agent incident response
+17.24 chaos engineering for LLM production
+17.25 security - secrets, PII scrubbing, audit logs
+17.26 compliance - SOC 2, HIPAA, GDPR, EU AI Act, ISO 42001
+17.27 FinOps for LLMs - unit economics and multi-tenant attribution
+17.28 self-hosted serving selection
+       - matching engine to hardware and scale
+17.29 model demo interfaces - from a function to a shareable app
 # 18. ethics, safety & alignment
+18.01 instruction-following as alignment signal
+18.02 reward hacking & goodhart's law
+18.03 direct preference optimization family
+18.04 sycophancy as RLHF amplification
+18.05 constitutional AI & RLAIF
+18.06 mesa-optimization & deceptive alignment
+18.07 sleeper agents - persistent deception
+18.08 in-context scheming in frontier models
+18.09 alignment faking
+18.10 AI control - safety despite subversion
+18.11 scalable oversight & weak-to-strong
+18.12 red-teaming: PAIR & automated attacks
+18.13 many-shot jailbreaking
+18.14 ASCII art & visual jailbreaks
+18.15 indirect prompt injection
+18.16 red-team tooling: garak, llama guard, pyRIT
+18.17 WMDP & dual-use capability evaluation
+18.18 frontier safety frameworks - RSP, PF, FSF
+18.19 model welfare research
+18.20 bias & representational harm
+18.21 fairness criteria: group, individual, counterfactual
+18.22 differential privacy for LLMs
+18.23 watermarking: synthID, stable signature, C2PA
+18.24 regulatory frameworks: EU, US, UK, Korea
+18.25 EchoLeak & CVEs for AI
+18.26 model, system & dataset cards
+18.27 data provenance & training-data governance
+18.28 alignment research ecosystem: MATS, Redwood, Apollo, METR
+18.29 moderation systems: openAI, perspective, llama guard
+18.30 dual-use risk: cyber, bio, chem, nuclear
 # 19. capstone projects
+19.01 terminal-native coding agent
+19.02 RAG over codebase (cross-repo semantic search)
+19.03 real-time voice assistant (ASR->LLM->TTS)
+19.04 multimodal document QA (vision-first)
+19.05 autonomous research agent (ai-scientist class)
+19.06 DevOps troubleshooting agent for Kubernetes
+19.07 end-to-end fine-tuning pipeline
+19.08 production RAG chatbot (regulated vertical)
+19.09 code migration agent (repo-level upgrade)
+19.10 multi-agent software engineering team
+19.11 LLM obervability & Eval dashboard
+19.12 video understanding pipeline (Scene -> QA)
+19.13 stateless MCP server with registry and governance
+19.14 speculative-decoding inference server
+19.15 cpnstitutional safety harness + red-team range
+19.16 github issue-to-pr autonomous agent
+19.17 personal AI tutor (adaptive, multimodal)
+19.20 agent harness loop contract
+19.21 tool registry with schema validation
+19.22 json-rpc 2.0 over newline-delimited stdio
+19.23 function call dispatcher
+19.24 plan-execute control flow
+19.25 verification gates and observation budget
+19.26 sandbox runner with denylist and path jail
+19.27 eval harness with fixture tasks
+19.28 observability with OTel GenAI Spans and prometheus metrics
+19.29 end-to-end coding agent on the harness
+19.30 BPE tokenizer from scratch
+19.31 tokenized dataset with sliding window
+19.32 token and positional embeddings
+19.33 multi-head self-attention
+19.34 transformer block from scratch
+19.35 GPT model assembly
+19.36 training loop and evaluation
+19.37 loading pretrained weights
+19.38 classifier fine-tuning by head swap
+19.39 instruction tuning by supervised fine-tuning
+19.40 direct preference optimization from scratch
+19.41 full evaluation pipeline
+19.42 large-corpus downloader
+19.43 HDF5 tokenized corpus
+19.44 cosine LR with linear warmup
+19.45 gradient clipping and mixed precision
+19.46 gradient accumulation
+19.47 checkpoint save and resume
+19.48 distributed data parallel and FSDP from scratch
+19.49 language model evaluation harness
+19.50 hypothesis generator
+19.51 literature retrieval
+19.52 experiment runner
+19.53 result evaluator
+19.54 paper writer
+19.55 critic loop
+19.56 iteration scheduler
+19.57 end-to-end research demo
+19.58 vision encoder patches
+19.59 vision transformer encoder
+19.60 projection layer for modality alignment
+19.61 cross-attention fusion
+19.62 vision-language pretraining
+19.63 multimodal evaluation
+19.64 chunking strategies, compared
+19.65 hybrid retrieval with BM25 and Dense embinddings
+19.66 cross-encoder reranker
+19.67 query rewriting: HyDE, multi-query, and decomposition
+19.68 RAG eval: precision,recall,MRR,nDCG,faithfull,relevant
+19.69 end-to-end RAG system
+19.70 task spec format
+19.71 classical metrics
+19.72 code exec metric
+19.73 perplexity and calibration
+19.74 leaderboard aggregation
+19.75 end-to-end eval runner
+19.76 collective ops from scratch
+19.77 data parallel DDP from scratch
+19.78 ZeRO optimizer state sharding
+19.79 pipeline parallel and bubble analysis
+19.80 sharded checkpoint and atomic resume
+19.81 end-to-end distributed training
+19.82 jailbreak taxonomy
+19.83 prompt injection detector
+19.84 refusal evaluation
+19.85 content classifier integrarion
+19.86 constitutional rules engine
+19.87 end-to-end safety gate
