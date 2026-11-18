@@ -25,3 +25,8 @@
 用户画像：最近状况、总览状况和阶段状况
 长任务与上下文漂移
 
+## agent流程范式
+### chat:history-append
+不断追加消息的会话历史
+### workflow:context-transfer
+将结构化处理的文本传递
