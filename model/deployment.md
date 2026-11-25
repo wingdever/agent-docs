@@ -21,3 +21,9 @@ SGLang深度优化：Radix缓存与复杂任务的极致吞吐
 - 复杂控制流优化
 - 多租户与智能调度
 - SGLang 与 vLLM 在执行中的差异
+
+## Quantization（量化）
+1. transformers量化算法
+- PTQ：训练后量化
+- QAT：量化感知训练
+2. AWQ：激活感知权重量化算法

@@ -19,11 +19,11 @@ Modular RAG
 	智能编排
 	技术融合
 ## variant 变体
-	T-RAG 时序感知
-	CRAG 纠错增强
-	Self-RAG 自反思
-	RAG-Fusion 多查询融合
-	Rewrite-Retrieve-Read RAG 查询重写
+T-RAG 时序感知
+CRAG 纠错增强
+Self-RAG 自反思
+RAG-Fusion 多查询融合
+Rewrite-Retrieve-Read RAG 查询重写
 ## component 部件
 检索器 Retriever
 生成器 Generator
@@ -44,6 +44,48 @@ Embeddings向量化
 		向量数据库类型
 		主流向量数据库和功能对比
 Prompt上下文增强设计
+
+## 分析和优化方案
+1. RAG分析
+- 文档加载准确性和效率
+- 文档切分的粒度
+- 错过排名靠前的文档
+- 提取上下文和答案无关
+- 格式错误
+- 答案不完整
+- 未提取到答案
+- 答案太具体或太笼统
+- 幻觉问题
+2. 索引优化
+- 改善数据细节度
+- 优化索引结构
+- 元数据索引原理
+- 摘要索引原理
+- 父子索引原理
+- 假设性问题索引原理
+3. 检索前优化
+- 微调Embedding模型
+- 混合检索
+- 问题转换
+4. 检索后优化
+- 召回重排
+- 信息压缩
+- 知识融合
+
+## 评估
+1. 质量指标
+- 上下文相关性
+- 答案忠实度
+- 答案相关性
+2. 能力指标
+- 对噪声的鲁棒性
+- 负面信息的排除能力
+- 信息整合能力
+3. 评估工具
+- [RAGAS](https://github.com/explodinggradients/ragas)
+- [ARES](https://github.com/sweetsoftware/Ares)
+- [Trulens](https://github.com/truera/trulens)
+
 
 ## MTEB榜单
 
